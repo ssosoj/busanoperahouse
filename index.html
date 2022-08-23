@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="viewport" content="width=1400">
+  <link rel="stylesheet" href="index.css">
+  <link href="images/favi32.png" rel="icon" type="images/png" sizes="32x32">
+
+  
+  <script type='text/javascript' src='script/jquery-3.5.1.min.js'></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script type="text/babel" src="script/banner_slide.js"></script>
+  <script src="script/menu_top_fixed.js"></script>
+  <script src="script/search.js"></script>
+
+  <title>부산오페라하우스</title>
+</head>
+
+<body>
+
+  <div id="wrap">
+    <!-- 배너 -->
+    <div class="banner_slide-wrap">
+      <div class='banner_slide'>
+        <div class='bs-item' style='opacity:1; z-index:1;'>
+          <a href='#none'>
+            <img src='images/banner-opera.jpg' alt=''>
+            <a href="#" class="b_btn">상세보기</a>
+          </a>
+        </div>
+        <div class='bs-item'>
+          <a href='#none'>
+            <img src='images/banner-ballet.jpg' alt=''>
+            <a href="#" class="b_btn">상세보기</a>
+          </a>
+        </div>
+        <div class='bs-item'>
+          <a href='#none'>
+            <img src='images/banner-concert.jpg' alt=''>
+            <a href="#" class="b_btn">상세보기</a>
+          </a>
+        </div>
+        <div class='bs-item'>
+          <a href='#none'>
+            <img src='images/banner-oca.jpg' alt=''>
+            <a href="#" class="b_btn">상세보기</a>
+          </a>
+        </div>
+        <div class='bs-item'>
+          <a href='#none'>
+            <img src='images/banner-musical.jpg' alt=''>
+            <a href="#" class="b_btn">상세보기</a>
+          </a>
+        </div>
+        <div class='bs-item'>
+          <a href='#none'>
+            <img src='images/banner-ghib.jpg' alt=''>
+            <a href="#" class="b_btn">상세보기</a>
+          </a>
+        </div>
+      </div>
+
+<!-- 배너 포스터 -->
+      <div class='banner_slide-pager'>
+        <div class='pager-bg'>
+          <a href='#none' class='on'>
+            <img src='images/poster-opera.jpg' alt=''>
+          </a>
+          <a href='#none' class=''>
+            <img src='images/poster-ballet.jpg' alt=''>
+          </a>
+          <a href='#none' class=''>
+            <img src='images/poster-conert.jpg' alt=''>
+          </a>
+          <a href='#none' class=''>
+            <img src='images/poster-oca.jpg' alt=''>
+          </a>
+          <a href='#none' class=''>
+            <img src='images/poster-musical.jpg' alt=''>
+          </a>
+          <a href='#none' class=''>
+            <img src='images/poster-ghib.jpg' alt=''>
+          </a>
+        </div>
+
+        <div id="sns">
+          <p>
+            SNS<br>
+            <a href="#"><img src="images/sns-youtube.png" alt="유튜브"></a>
+            <a href="#"><img src="images/sns-instar.png" alt="인스타그램"></a>
+            <a href="#"><img src="images/sns-facebook.png" alt="페이스북"></a>
+            <a href="#"><img src="images/sns-twitter.png" alt="트위터"></a>
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+      <!-- 메뉴 -->
+      <div id="header">
+        <div id="header_inner">
+        <ul class="gnb left gnb1">
+          <li><a href="#">공연안내</a></li>
+          <li><a href="#">티켓예매</a></li>
+          <li><a href="#">아카데미</a></li>
+          <li><a href="#">고객센터</a></li>
+        </ul>
+        
+<a href="#"><img src="images/main-logo.png" alt="로고" class="main_logo left"></a>
+
+        <ul class="gnb left gnb2">
+          <li><a href="#">기관소개</a></li>
+          <li><a href="#">알림마당</a></li>
+
+          <li><a href="#" id="small">MD샵</a></li>
+          <li><a href="#" id="small">로그인</a></li>
+
+          <li><a href="#"><img src="images/main-calendar.png" alt="달력"></a></li>
+          <li>
+            <div class="search-wrapper">
+              <div class="input-holder">
+                <input type="text" class="search-input" placeholder="검색" />
+                <button class="search-icon" onclick="searchToggle(this, event);">
+                  <span><img src="images/main-search.png" alt=""></span>
+                </button>
+              </div>
+
+              <span class="close" onclick="searchToggle(this, event);"></span>
+              
+            </div>
+          </li>
+        </ul>
+
+        <!-- <a href="#"><img src="images/main-logo.png" alt="로고" id="main_logo"></a> -->
+      </div>
+    </div>
+  </div>
+
+  
+      <!-- 상단고정 메뉴 -->
+      <div class="gnb_top">
+        <div class="gnb_top_inner">
+          <ul class="left gnb1_top">
+            <li><a href="#">공연안내</a></li>
+            <li><a href="#">티켓예매</a></li>
+            <li><a href="#">아카데미</a></li>
+            <li><a href="#">고객센터</a></li>
+          </ul>
+    
+          <ul class="right gnb2_top">
+            <li><a href="#">기관소개</a></li>
+            <li><a href="#">알림마당</a></li>
+    
+            <li><a href="#" id="small_top">MD샵</a></li>
+            <li><a href="#" id="small_top">로그인</a></li>
+    
+            <li><a href="#"><img src="images/main-calendar.png" alt="달력"></a></li>
+            <li>
+              <div class="search-wrapper_top">
+                <div class="input-holder_top">
+                  <input type="text" class="search-input_top" placeholder="검색" />
+                  <button class="search-icon_top" onclick="searchToggle_top(this, event);">
+                    <span><img src="images/main-search.png" alt=""></span>
+                  </button>
+                </div>
+                <span class="close_top" onclick="searchToggle_top(this, event);"></span>
+              </div>
+            </li>
+          </ul>
+    
+          <a href="#"><img src="images/fix_logo.png" alt="로고" id="logo_top"></a>
+        </div>
+      </div>
+
+<div id="con_wrap">
+
+  <!-- 작은 메뉴 -->
+  <div id="mm">
+    <ul>
+      <li>
+        <a href="#">
+          <img src="images/mm-n.png" alt="소식">
+          <p>부오하소식</p>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="images/mm-s.png" alt="좌석배치도">
+          <p>좌석배치도</p>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="images/mm-t.png" alt="예매안내">
+          <p>예매안내</p>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="images/mm-m.png" alt="오시는길">
+          <p>오시는길</p>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="images/mm-f.png" alt="FAQ">
+          <p>FAQ</p>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+
+  <!-- 티켓 오픈 -->
+  <div id="to">
+    <h1>TICKET OPEN</h1>
+
+    <div class="to_box">
+      <ul>
+        <li>
+          <a href="#">
+            <p id="genre">오페라</p>
+            <p id="name">&lt;마술피리&gt;</p>
+            <img src="images/to-opera.jpg" alt="to_마술피리">
+            <p id="dday">D-10</p>
+            <p id="date">2022.12.12 - 2022.12.30</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <p id="genre">뮤지컬</p>
+            <p id="name">&lt;노인과 바다&gt;</p>
+            <img src="images/to-musical.jpg" alt="to_노인과바다">
+            <p id="dday">D-10</p>
+            <p id="date">2023.01.01 - 2023.03.03</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <p id="genre">오페라</p>
+            <p id="name">&lt;갈라 콘서트&gt;</p>
+            <img src="images/to-concert.jpg" alt="to_갈라 콘서트">
+            <p id="dday">D-10</p>
+            <p id="date">2023.01.28 - 2023.01.31</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <p id="genre">클래식</p>
+            <p id="name">&lt;오케스트라 정기공연&gt;</p>
+            <img src="images/to-oca.jpg" alt="to_오케스트라">
+            <p id="dday">D-10</p>
+            <p id="date">2022.12.20</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <p id="genre">발레</p>
+            <p id="name">&lt;고집쟁이 딸&gt;</p>
+            <img src="images/to-ballet.jpg" alt="to_고집쟁이딸">
+            <p id="dday">D-10</p>
+            <p id="date">2023.01.24-2023.01.30</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="center">
+      <a href="#" class="btn clear">티켓오픈 더보기+</a>
+    </div>
+  </div>
+
+
+  <!-- 지역 행사 -->
+  <div id="eventbanner">
+    <a href="#">
+      <img src="images/eventbanner.jpg" alt="행사">
+    </a>
+  </div>
+
+  
+  <!-- 슬라이드 -->
+  <div id="slide">
+    <div id="s_bg"></div>
+    <ul class="slide_a">
+      <li>
+        <a href="#"><img src="images/bag.png" alt="쇼핑백"></a>
+      </li>
+      <li>
+        <a href="#"><img src="images/cd.png" alt="cd"></a>
+      </li>
+      <li>
+        <a href="#"><img src="images/usb.png" alt="usb"></a>
+      </li>
+      <li>
+        <a href="#"><img src="images/umb.png" alt="우산"></a>
+      </li>
+    </ul>
+    <ul class="slide_b">
+      <li>
+        <a href="#"><img src="images/bag.png" alt="쇼핑백"></a>
+      </li>
+      <li>
+        <a href="#"><img src="images/cd.png" alt="cd"></a>
+      </li>
+      <li>
+        <a href="#"><img src="images/usb.png" alt="usb"></a>
+      </li>
+      <li>
+        <a href="#"><img src="images/umb.png" alt="우산"></a>
+      </li>
+    </ul>
+  </div>
+
+
+
+  <div id="box">
+    <!-- 공지사항 -->
+    <div class="news left">
+      <h2>공지사항</h2>
+      <div id="more"><a href="#"><img src="images/more.png" alt="더보기"></a></div>
+
+      <table id="n_1">
+        <tr>
+          <th>
+            2022 <br>
+            12.05
+          </th>
+          <td>
+            <a href="#">부산오페라하우스 개관일 알림</a>
+          </td>
+        </tr>
+      </table>
+      <table id="n_1">
+        <tr>
+          <th>
+            2022 <br>
+            12.05
+          </th>
+          <td>
+            <a href="#">부산오페라하우스 첫 공연작품 안내</a>
+          </td>
+        </tr>
+      </table>
+
+      <table id="n_2">
+        <tr>
+          <td><a href="#">부산오페라하우스 안내도우미 봉사자 모집 안내</a></td>
+          <td>
+            <p>2022.11.25</p>
+          </td>
+        </tr>
+        <tr>
+          <td><a href="#">부산오페라하우스 직원 채용 합격자 안내</a></td>
+          <td>
+            <p>2022.11.10</p>
+          </td>
+        </tr>
+        <tr>
+          <td><a href="#">부산오페라하우스 직원 채용 면접시험 안내</a></td>
+          <td>
+            <p>2022.11.01</p>
+          </td>
+        </tr>
+        <tr>
+          <td><a href="#">부산오페라하우스 직원 채용 서류전형 합격자 발표</a></td>
+          <td>
+            <p>2022.10.30</p>
+          </td>
+        </tr>
+        <tr>
+          <td><a href="#">부산오페라하우스 직원 채용 채용 안내</a></td>
+          <td>
+            <p>2022.10.24</p>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- 이벤트 -->
+    <div class="event right">
+      <h2>프로모션/이벤트</h2>
+      <div id="more"><a href="#"><img src="images/more.png" alt="더보기"></a></div>
+
+      <div id="e_poster">
+        <img src="images/event-poster.png" alt="이벤트포스터">
+
+        <div id="e_l">
+          <a href="#"><img src="images/event-left.png" alt="좌"></a>
+        </div>
+
+        <div id="e_r">
+          <a href="#"><img src="images/event-right.png" alt="우"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+<!-- 푸터 -->
+  <div class="footer clear">
+    <div class="footer_inner">
+      <p class="f_1 opa50">
+        <a href="#none">개인정보처리방침</a>
+        <a href="#none">이메일무단수집거부</a>
+        <a href="#none">고객서비스현장</a>
+        <a href="#none">오시는길</a>
+        <a href="#none">원격지원</a>
+      </p>
+    </div>
+    <hr>
+    <div class="footer_inner">
+      <img src="images/footer_logo.png" alt="로고" class="f_logo left">
+      <p class="f_2 opa50">
+        재단법인 부산오페라하우스 부산광역시 중구 북항 (우)00000 <br>
+        대표자 : 홍길동 사업자등록번호 : 000-00-00000 <br>
+        통신판매업신고 : 부산중구-0000호
+      </p>
+      
+      <p class="f_3">
+        <a href="https://www.busanpa.com/kor/Main.do" target="_blank"><img src="images/footer-bpa.jpg" alt="부산항만공사"></a>
+        <a href="https://www.busan.go.kr/index" target="_blank"><img src="images/footer-busan.png" alt="부산광역시"></a>
+        <br>
+        전화예매 및 문의 : 051-000-0000
+      </p>
+  
+      <p class="clear opa50">COPYRIGHT(C) BUSAN OPERA HOUSE. ALL RIGHTS RESERVED</p>
+    </div>
+  </div>
+
+
+</body>
+
+</html>

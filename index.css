@@ -1,0 +1,791 @@
+*{margin:0; padding:0;}
+a{color: #000; text-decoration: none;}
+ul{list-style: none;}
+
+@font-face {
+  font-family: 'SUIT';
+  font-weight: 100;
+  font-style: normal;
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/sunn/SUIT-Thin.eot');
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/sunn/SUIT-Thin.eot?#iefix') format('embedded-opentype'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/sunn/SUIT-Thin.woff2') format('woff2'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/sunn/SUIT-Thin.woff') format('woff'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/sunn/SUIT-Thin.ttf') format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: 'SUIT';
+  font-weight: 200;
+  font-style: normal;
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/sunn/SUIT-ExtraLight.eot');
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/sunn/SUIT-ExtraLight.eot?#iefix') format('embedded-opentype'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/sunn/SUIT-ExtraLight.woff2') format('woff2'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/sunn/SUIT-ExtraLight.woff') format('woff'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/sunn/SUIT-ExtraLight.ttf') format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: 'SUIT';
+  font-weight: 300;
+  font-style: normal;
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/sunn/SUIT-Light.eot');
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/sunn/SUIT-Light.eot?#iefix') format('embedded-opentype'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/sunn/SUIT-Light.woff2') format('woff2'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/sunn/SUIT-Light.woff') format('woff'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/sunn/SUIT-Light.ttf') format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: 'SUIT';
+  font-weight: 400;
+  font-style: normal;
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/sunn/SUIT-Regular.eot');
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/sunn/SUIT-Regular.eot?#iefix') format('embedded-opentype'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/sunn/SUIT-Regular.woff2') format('woff2'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/sunn/SUIT-Regular.woff') format('woff'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/sunn/SUIT-Regular.ttf') format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: 'SUIT';
+  font-weight: 500;
+  font-style: normal;
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/sunn/SUIT-Medium.eot');
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/sunn/SUIT-Medium.eot?#iefix') format('embedded-opentype'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/sunn/SUIT-Medium.woff2') format('woff2'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/sunn/SUIT-Medium.woff') format('woff'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/sunn/SUIT-Medium.ttf') format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: 'SUIT';
+  font-weight: 600;
+  font-style: normal;
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/sunn/SUIT-SemiBold.eot');
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/sunn/SUIT-SemiBold.eot?#iefix') format('embedded-opentype'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/sunn/SUIT-SemiBold.woff2') format('woff2'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/sunn/SUIT-SemiBold.woff') format('woff'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/sunn/SUIT-SemiBold.ttf') format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: 'SUIT';
+  font-weight: 700;
+  font-style: normal;
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/sunn/SUIT-Bold.eot');
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/sunn/SUIT-Bold.eot?#iefix') format('embedded-opentype'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/sunn/SUIT-Bold.woff2') format('woff2'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/sunn/SUIT-Bold.woff') format('woff'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/sunn/SUIT-Bold.ttf') format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: 'SUIT';
+  font-weight: 800;
+  font-style: normal;
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/sunn/SUIT-ExtraBold.eot');
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/sunn/SUIT-ExtraBold.eot?#iefix') format('embedded-opentype'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/sunn/SUIT-ExtraBold.woff2') format('woff2'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/sunn/SUIT-ExtraBold.woff') format('woff'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/sunn/SUIT-ExtraBold.ttf') format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: 'SUIT';
+  font-weight: 900;
+  font-style: normal;
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/sunn/SUIT-Heavy.eot');
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/sunn/SUIT-Heavy.eot?#iefix') format('embedded-opentype'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/sunn/SUIT-Heavy.woff2') format('woff2'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/sunn/SUIT-Heavy.woff') format('woff'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/sunn/SUIT-Heavy.ttf') format("truetype");
+  font-display: swap;
+}
+
+body{
+  font-family: 'SUIT';
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #000;
+}
+
+
+ #wrap{
+  width: 100%;
+  /* width: 1920px; */
+  height: 980px;
+  margin: auto;
+
+  position: relative;
+}
+
+
+/* 배너 */
+.banner_slide-wrap {
+  width: 1920px;
+  /* width: 100%; */
+
+  height: 100%;
+  /* height: 980px; */
+
+  margin: auto;
+
+  position: relative;
+  overflow: hidden;
+}
+.banner_slide {
+  position: absolute;
+
+  /* width: 1920px; */
+  width: 100%;
+
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.b_btn{
+  display: inline-block;
+
+  padding: 21px 71px;
+  background-color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+
+  border: 3px solid #42444e;
+
+  position: absolute;
+  top: 600px;
+  left: 330px;
+}
+.b_btn:hover{
+  background-color: #42444e;
+  color: #f1f2f2;
+}
+
+.bs-item {
+  position: absolute;
+  /* width: 1920px; */
+  width: 100%;
+  height: 980px;
+  opacity: 0;
+}
+.bs-item img {
+  /* width: 1920px; */
+  width: 100%;
+
+  height: auto;
+  
+  display: block;
+}
+
+/* 배너 포스터 */
+.banner_slide-pager {
+  width: 100%;
+  text-align: center;
+
+  position: absolute;
+  bottom: 0;
+
+  height: 235px;
+  background-color: #aeabab73;
+}
+.banner_slide-pager .pager-bg {
+  height: 18px;
+}
+.banner_slide-pager .pager-bg a {
+  display: inline-block;
+
+  position: relative;
+  top: 20px;
+  
+  margin: 0 20px;
+}
+.banner_slide-pager .pager-bg a img {
+  display: block;
+  height: 174px;
+}
+.banner_slide-pager .pager-bg a.on {
+  border: 5px solid white;
+  position: relative;
+  top: 10px;
+}
+
+
+/* sns */
+#sns{
+  display: inline-block;
+  text-align: left;
+
+  position: absolute;
+  left: 30px;
+  top: 35%;
+ }
+ #sns p{
+   font-size: 20px;
+   font-weight: 700;
+   color: #f1f2f2;
+ }
+ #sns a{
+   margin-right: 10px;
+ }
+
+
+/* 메뉴 */
+#header{
+  width: 100%;
+  
+  margin: 10px auto;
+
+  position: absolute;
+  top: 0;
+
+}
+#header_inner{
+  width: 1320px;
+  margin: auto;
+
+}
+.gnb li a{
+  color: #f1f2f2;
+  font-size: 25px;
+  font-weight: 700;
+}
+.gnb1, .gnb2{
+  padding-top: 55px;
+
+}
+.gnb1 li{
+  float: left;
+  padding-right: 43px;
+}
+.gnb2{
+  position: relative;
+}
+.gnb2 li{
+  float: left;
+  padding-left: 22px;
+}
+.main_logo{
+  display: inline-block;
+  padding: 0 50px 0 40px;
+}
+#small{
+  font-size: 20px;
+}
+
+
+/* 메뉴 검색 */
+.search-wrapper {
+  position: absolute;
+  top: 45px;
+  right: -40px;
+
+}
+.search-wrapper .input-holder {    
+  width:50px;
+  height:50px;
+  overflow: hidden;
+
+  border-radius: 10px;
+  
+  position: relative;
+}
+.search-wrapper.active .input-holder {
+  width:500px;
+  background: #42444e;
+}
+.search-wrapper .input-holder .search-input {
+  width:100%;
+  height: 50px;
+  padding:0px 60px 0 20px;
+
+  opacity: 0;
+
+  position: absolute;
+  top:-10px;
+  left:0px;
+  
+  background: transparent;
+  box-sizing: border-box;
+
+  border: 0;
+  outline:none;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color:#f1f2f2;
+}
+.search-wrapper.active .input-holder .search-input {
+  opacity: 1;
+  transform: translate(0, 10px);
+
+}
+.search-wrapper .input-holder .search-icon {
+  width:50px;
+  height:50px;
+  border:none;
+  border-radius:6px;
+  background: #f1f2f200;
+  padding:0px;
+  outline:none;
+  position: relative;
+  z-index: 2;
+  float:right;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.search-wrapper .close {
+  position: absolute;
+  z-index: 1;
+  top:10px;
+  right:20px;
+  width:25px;
+  height:25px;
+
+  cursor: pointer;
+
+  display: none;
+}
+.search-wrapper.active .close {
+  right:-50px;
+  transform: rotate(45deg);
+  display: block;
+}
+.search-wrapper .close::before, .search-wrapper .close::after {
+  position:absolute;
+  content:'';
+  background: #f37021;
+  border-radius: 2px;
+}
+.search-wrapper .close::before {
+  width: 5px;
+  height: 25px;
+  left: 10px;
+  top: 0px;
+}
+.search-wrapper .close::after {
+  width: 25px;
+  height: 5px;
+  left: 0px;
+  top: 10px;
+}
+
+
+/* 상단 고정 */
+.scroll-fixed{
+  position: fixed;
+  top: 0px;
+}
+.gnb_top{
+  width: 100%;
+  background-color: #42444e;
+
+  display: none;
+
+  z-index: 99;
+}
+.gnb_top_inner{
+  width: 1320px;
+  margin: 10px auto;
+}
+.gnb_top_inner li a{
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 48px;
+
+  color: #f1f2f2;
+}
+.gnb1_top li{
+  float: left;
+  padding-right: 50px;
+}
+.gnb2_top{
+  position: relative;
+}
+.gnb2_top li{
+  float: left;
+}
+.gnb2_top li:nth-child(2), .gnb2_top li:nth-child(3){
+  padding-left: 50px;
+}
+.gnb2_top li:nth-child(4), .gnb2_top li:nth-child(5), .gnb2_top li:nth-child(6){
+  padding-left: 22px;
+}
+#small_top{
+  font-size: 20px;
+}
+#logo_top{
+  margin-left: 120px;
+}
+.on{
+  display: block;
+}
+
+
+
+/* 상단고정 메뉴 검색 */
+.search-wrapper_top {
+  position: absolute;
+  top: -15px;
+  right: -50px;
+}
+.search-wrapper_top .input-holder_top {    
+  height: 70px;
+  width:70px;
+  overflow: hidden;
+
+  border-radius: 10px;
+  
+  position: relative;
+}
+.search-wrapper_top.active .input-holder_top {
+  width:510px;
+  background: #42444e;
+}
+.search-wrapper_top .input-holder_top .search-input_top {
+  width:100%;
+  height: 50px;
+  padding:0px 70px 0 20px;
+
+  opacity: 0;
+
+  position: absolute;
+  top:0px;
+  left:0px;
+  
+  background: transparent;
+  box-sizing: border-box;
+
+  border: 0;
+  outline:none;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color:#f1f2f2;
+}
+.search-wrapper_top.active .input-holder_top .search-input_top {
+  opacity: 1;
+  transform: translate(0, 10px);
+
+  border-bottom: 3px solid #f1f2f2;
+
+}
+.search-wrapper_top .input-holder_top .search-icon_top {
+  width:70px;
+  height:70px;
+  border:none;
+  border-radius:6px;
+  background: #42444e00;
+  padding:0px;
+  outline:none;
+  position: relative;
+  z-index: 2;
+  float:right;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.search-wrapper_top .close_top {
+  position: absolute;
+  z-index: 1;
+  top:24px;
+  right:20px;
+  width:25px;
+  height:25px;
+
+  cursor: pointer;
+
+  display: none;
+}
+.search-wrapper_top.active .close_top {
+  right:-50px;
+  transform: rotate(45deg);
+  display: block;
+}
+.search-wrapper_top .close_top::before, .search-wrapper_top .close_top::after {
+  position:absolute;
+  content:'';
+  background: #f37021;
+  border-radius: 2px;
+}
+.search-wrapper_top .close_top::before {
+  width: 5px;
+  height: 25px;
+  left: 10px;
+  top: 0px;
+}
+.search-wrapper_top .close_top::after {
+  width: 25px;
+  height: 5px;
+  left: 0px;
+  top: 10px;
+}
+
+
+/* 작은 메뉴 */
+#mm{
+  width: 900px;
+  height: 70px;
+  margin: 70px auto;
+
+  text-align: center;
+}
+#mm li{
+  float: left;
+  padding: 10px 10px;
+  margin: 0 45px;
+}
+#mm li:hover{
+  background: url(images/mm-hover.png) no-repeat top center;
+}
+
+
+#con_wrap{
+  width: 1320px;
+  margin: auto;
+}
+
+/* 티켓오픈 */
+#to > h1{
+  padding: 50px 0 40px 0;
+
+  font-size: 40px;
+  font-weight: 600;
+
+  text-align: center;
+}
+.to_box{
+  width: 1400px;
+  margin: auto;
+  text-align: center;
+}
+.to_box > ul > li{ 
+  display: inline-block;
+  border: 1px solid #42444e;
+  width: 200px;
+  height: 200px;
+
+  padding: 30px 20px;
+  margin: 10px;
+} 
+.to_box > ul > li:hover{
+  background-color: #9799a0;
+} 
+.to_box > ul > li:hover > a > p:nth-child(-n+3){
+  color: #f1f2f2;
+}
+#genre{
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 25px;
+}
+#name{
+  font-size: 18px;
+  font-weight: 500;
+
+  padding-bottom: 5px;
+}
+#dday{
+  font-size: 18px;
+  font-weight: 500;
+  color: #f37021;
+}
+#date{
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.btn{
+  display: inline-block;
+
+  margin: 60px 0 30px;
+
+  padding: 21px 71px;
+  font-size: 18px;
+  font-weight: 600;
+  border: 1px solid #42444e;
+}
+.btn:hover{
+  background-color: #9799a0;
+  border: 1px solid #9799a0;
+
+  color: #f1f2f2;
+}
+
+
+/* 지역행사 */
+#eventbanner{
+  width: 100%;
+  margin: auto;
+}
+#eventbanner img{
+  width: 100%;
+}
+
+
+/* 슬라이드 */
+#slide{
+  width:100%;
+  height: 450px;
+
+  text-align: center;
+
+  margin: 30px 0;
+
+  overflow:hidden;
+  position:relative;
+  
+  background: url(images/s_bg2.png) no-repeat center bottom;
+
+}
+#slide ul{	
+  width:1920px;
+  overflow:hidden;
+}
+#slide ul li{
+  float: left;
+
+  margin-top: 10px;
+  margin-left: 50px;
+  width: 20%;
+}
+#slide ul li:nth-child(2n){
+  margin-top: 130px;
+}
+.slide_a{
+  position:absolute;
+  left:-1920px;
+  animation:ani 20s infinite linear;
+}
+.slide_b{
+  position:absolute;
+  left:-1920px;
+  animation:ani 20s infinite linear 10s;
+}
+@keyframes ani{
+  0%{left:1920px;}
+  100%{left:-1920px;}
+}
+
+
+
+/* 공지사항, 이벤트 */
+#box{
+  width: 1170px;
+  height: 600px;
+  margin: 50px auto;
+}
+#box h2{
+  font-size: 30px;
+  font-weight: 700;
+
+  margin-bottom: 20px;
+
+  display: inline-block;
+}
+#more{
+  float: right;
+  margin-top: 2px;
+}
+
+/* 공지사항 */
+.news{  width: 540px;}
+table{
+  width: 100%;
+  border-collapse: collapse;
+}
+#n_1{  margin-bottom: 10px;}
+#n_1 th, #n_1 td{  
+  padding: 20px;
+  border: 1px solid #42444e;
+}
+#n_1 th{
+  font-size: 20px;
+  font-weight: 600;
+  background-color: #42444e;
+  color: #f1f2f2;
+
+  width: 60px;
+}
+#n_1 td{
+  font-size: 18px;
+  font-weight: 500;
+}
+
+#n_2{  margin-top: 25px;}
+#n_2 td{  padding-bottom: 20px;}
+#n_2 tr td:nth-child(2){  text-align: right;
+font-size: 18px;
+font-weight: 300;}
+
+
+/* 이벤트 */
+.event{  width: 490px;}
+#e_poster{  
+  width: 488px;
+  height: 555px;
+
+  position: relative;}
+#e_l{
+  display: inline;
+
+  position: absolute;
+  top: 257px;
+  left: 10px;
+}
+#e_r{
+  display: inline;
+
+  position: absolute;
+  top: 257px;
+  right: 10px;
+}
+
+
+/* 푸터 */
+.footer{
+  background-color: #42444e;
+  font-size: 13px;
+  font-weight: 400;
+  height: 310px;
+ }
+ .footer_inner{
+  width: 1320px;
+  margin: auto;
+ }
+ .opa50, .opa50>a {
+  color: #f1f2f2;
+  opacity: 50%;
+ }
+ .f_1{
+  word-spacing: 33px;
+  padding: 22px 0 22px 0;
+ }
+ .f_logo{
+  display: inline-block;
+  margin: 22px 36px 31px 0;
+ }
+.f_2{
+  margin-top: 20px;
+  line-height: 30px;
+  display: inline-block;
+} 
+.f_3 > a{
+  padding-left: 35px;
+}
+.f_3{
+  float: right;
+  text-align: right;
+  color: #f1f2f2;
+  padding-top: 20px;
+  line-height: 40px;
+}
+
+ .right{  float: right; }
+ .left{  float: left; }
+
+ .clear{ clear: both;}
+
+.center{  text-align: center;}
