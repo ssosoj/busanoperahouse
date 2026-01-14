@@ -564,7 +564,7 @@ body{
 .to_box > ul > li{ 
   display: inline-block;
   border: 1px solid #42444e;
-  width: 200px;
+  width: 12%;
   height: 200px;
 
   padding: 30px 20px;
@@ -789,3 +789,4 @@ font-weight: 300;}
  .clear{ clear: both;}
 
 .center{  text-align: center;}
+
