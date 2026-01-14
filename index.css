@@ -112,7 +112,8 @@ body{
 
 
  #wrap{
- width: 1920px;
+  width: 100%;
+  /* width: 1920px; */
   height: 980px;
   margin: auto;
 
@@ -122,8 +123,8 @@ body{
 
 /* 배너 */
 .banner_slide-wrap {
-  /* width: 1920px; */
-  width: 100%;
+  width: 1920px;
+  /* width: 100%; */
 
   height: 100%;
   /* height: 980px; */
@@ -542,10 +543,8 @@ body{
 
 
 #con_wrap{
-  width : 95%;
-  max-width: 1320px;
-  /* width: 1320px; */
-  margin: 0 auto;
+  width: 1320px;
+  margin: auto;
 }
 
 /* 티켓오픈 */
@@ -558,20 +557,18 @@ body{
   text-align: center;
 }
 .to_box{
-  width: 100%;
-  /* width: 1400px; */
-  margin: 0 auto;
+  width: 1400px;
+  margin: auto;
   text-align: center;
 }
 .to_box > ul > li{ 
   display: inline-block;
   border: 1px solid #42444e;
-  
   width: 200px;
   height: 200px;
 
   padding: 30px 20px;
-  margin: 10px auto;
+  margin: 10px;
 } 
 .to_box > ul > li:hover{
   background-color: #9799a0;
@@ -792,6 +789,3 @@ font-weight: 300;}
  .clear{ clear: both;}
 
 .center{  text-align: center;}
-
-
-
