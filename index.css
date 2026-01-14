@@ -525,20 +525,7 @@ body{
 
 
 /* 작은 메뉴 */
-#mm {
-  width: 100%;         /* 900px 제거 */
-  height: auto;        /* 고정 높이 제거 */
-  margin: 50px auto;
-  text-align: center;
-}
-
-#mm li {
-  display: inline-block; /* float 대신 사용하면 중앙 정렬이 쉽습니다 */
-  float: none;           /* 기존 float 해제 */
-  margin: 10px;          /* 간격 조정 */
-}
-
-/*#mm{
+#mm{
   width: 900px;
   height: 70px;
   margin: 70px auto;
@@ -550,7 +537,6 @@ body{
   padding: 10px 10px;
   margin: 0 45px;
 }
-*/
 #mm li:hover{
   background: url(images/mm-hover.png) no-repeat top center;
 }
@@ -581,10 +567,8 @@ body{
 .to_box > ul > li{ 
   display: inline-block;
   border: 1px solid #42444e;
-  width: 100%;         /* 한 줄에 하나씩 나오게 하거나 */
-  max-width: 300px;    /* 최대 크기를 제한 */
   
-  /* width: 200px;*/
+  width: 200px;
   height: 200px;
 
   padding: 30px 20px;
@@ -809,4 +793,5 @@ font-weight: 300;}
  .clear{ clear: both;}
 
 .center{  text-align: center;}
+
 
