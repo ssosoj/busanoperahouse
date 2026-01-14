@@ -102,8 +102,6 @@ ul{list-style: none;}
   font-display: swap;
 }
 
-/**
-0115 수정전
 body{
   font-family: 'SUIT';
   font-size: 18px;
@@ -115,7 +113,7 @@ body{
 
  #wrap{
   width: 100%;
-  /* width: 1920px; 
+  /* width: 1920px; */
   height: 980px;
   margin: auto;
 
@@ -123,53 +121,19 @@ body{
 }
 
 
-/* 배너 
+/* 배너 */
 .banner_slide-wrap {
   width: 1920px;
-  /* width: 100%; 
+  /* width: 100%; */
 
   height: 100%;
-  /* height: 980px; 
+  /* height: 980px; */
 
   margin: auto;
 
   position: relative;
   overflow: hidden;
 }
-*/
-
-/*0115 수정 후*/
-body {
-  width: 100%;
-  overflow-x: hidden; /* 가로 스크롤 강제 방지 */
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* 모든 자식 요소를 가로축 중앙으로 */
-}
-
-#wrap {
-  width: 100%;        /* 1920px 고정값 제거 */
-  max-width: 1920px;  /* PC에서는 최대 이만큼만 커지게 함 */
-  margin: 0 auto;     /* 중앙 정렬 */
-  position: relative;
-}
-
-/* 3. 배너 영역 수정 */
-.banner_slide-wrap {
-  width: 100%;        /* 1920px 고정값 제거 */
-  height: 800px;      /* 높이는 적절히 조절 */
-  margin: 0 auto;
-  overflow: hidden;
-}
-/* 4. 본문 컨테이너 수정 */
-#con_wrap, .to_box {
-  width: 100%;        /* 1320px, 1400px 고정값 제거 */
-  max-width: 1320px;  /* PC 최대 너비 제한 */
-  margin: 0 auto;     /* 좌우 자동 여백으로 중앙 배치 */
-  padding: 0 20px;    /* 모바일에서 양끝 여백 확보 */
-}
-/*0115 수정 후*/
-
 .banner_slide {
   position: absolute;
 
@@ -578,12 +542,10 @@ body {
 }
 
 
-/* 
-0115 수정전
 #con_wrap{
   width: 1320px;
   margin: auto;
-}*/
+}
 
 /* 티켓오픈 */
 #to > h1{
@@ -594,14 +556,11 @@ body {
 
   text-align: center;
 }
-
-/*0115 수정 후
 .to_box{
   width: 1400px;
   margin: auto;
   text-align: center;
 }
-0115 수정 후*/
 .to_box > ul > li{ 
   display: inline-block;
   border: 1px solid #42444e;
@@ -830,4 +789,3 @@ font-weight: 300;}
  .clear{ clear: both;}
 
 .center{  text-align: center;}
-
